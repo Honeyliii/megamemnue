@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    direction: rtl;
+    background-color: #ad23c9;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.menu > li {
+    display: inline-block;
+    position: static;
+}
+.menu > li > button {
+    background-color: unset;
+    border: unset;
+    font-size: 18px;
+    color: #000;
+}
+.menu > li > .megaMenu {
+    position: absolute;
+    right: 0;
+    background-color: #dff517;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 5px 5px #999;
+    display: none;
+}
+.menu > li > .megaMenu > .col {
+    flex: 0 0 25%;
+}
+.menu > li > .megaMenu > .col > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu > li:hover > .megaMenu {
+    display: flex;
+}
